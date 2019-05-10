@@ -131,18 +131,51 @@ border-color: #ED1C24;
 .pb100 {
 	padding-bottom: 100px;
 }
+
+.carousel-indicators li{
+	    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #ED1C24;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+	border:none;
+	}
+	.carousel-indicators li.active{
+			    width: 12px;
+    height: 12px;
+		}
+.owl-theme .owl-dots .owl-dot span	{
+	    background: #ED1C24;
+    transition: opacity .2s ease;
+	opacity:.5;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+		opacity:1;
+		  background: #ED1C24;
+		  			    width: 12px;
+    height: 12px;
+	}
+	
+
+
 .sec-heading {
 	font-size: 1.25rem;
 	margin-bottom: 50px;
+	    color: rgba(40,50,60,.8);
 }
 .sec-heading h1 {
 	font-size: 3.75rem;
 	font-weight: 600;
 	padding-bottom: 15px;
+	    color: rgba(40,50,60,1);
 }
 .sec-heading h2 {
 	font-size: 2.25rem;
 	margin-bottom: 30px;
+	    color: rgba(40,40,60,1);
 }
 /* Header Section */
 
@@ -194,6 +227,97 @@ header .navbar-light.affix .navbar-brand img {
 	width: 200px;
 	height: 39px;
 }
+
+
+.navbar-light .nav-search {
+    background: url(../images/icon/search-solid.svg) no-repeat 92% 10px;
+    padding-left: 15px;
+    padding-right: 20px;
+    height: 41px;
+    width: 180px;
+    background-size: 18px;
+	margin-left:15px;
+	
+}
+
+.navbar-light .nav-search::after {
+
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 14px 25px;
+/*    font-weight: 900;
+    content: "\f002";*/
+	
+	
+}
+	
+	/*Banner1*/
+.homebanner.jumbotron.jumbotron-fluid {
+	margin-bottom: 0;
+	background-color: #fff;
+	padding: 0;
+}
+.banner-oval {
+	width: 100%;
+	height: 100%;
+	background: #FF0099;
+	background-image: linear-gradient(45deg, #3023AE 0%, #FF0099 100%);
+	border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+	box-shadow: -10vmin 10vmin 0 rgba(255, 255, 255, 0.07);
+}
+.homebanner.jumbotron.jumbotron-fluid .container-fluid{
+	width:90%;
+	}
+	
+	
+.homebanner.jumbotron.jumbotron-fluid h1{
+	font-size:3.75rem;
+	padding-top:50px;
+	}
+.homebanner .bannercard{
+	padding:0;
+	margin:0;
+	
+	}
+.homebanner .bannercard  li{
+	    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+	    position: relative;
+    width: 100%;
+	padding:5px;
+	margin:0;
+
+	list-style-type:none;
+	float:left;
+	display:block;
+	
+	}
+	.homebanner .bannercard  li a {	background:rgba(56,85,114,1);
+		color:rgba(255,255,255,.8);
+		height: 140px;
+    display: block;
+	padding:20px;
+
+		}
+		
+			.homebanner .bannercard  li a:hover{
+				background:rgba(43,72,102,1);
+				}
+		
+			.homebanner .bannercard  li a h4{
+				font-weight:300;
+					}
+	.homebanner .bannercard  li a img{
+		width:70px;
+		position:absolute;
+		right:20px;
+		bottom:20px;
+		opacity:.6;
+		
+		}
+	
 /*Owl Carousel Highlighter */
 
 .highlighter {
@@ -215,25 +339,11 @@ header .navbar-light.affix .navbar-brand img {
 }
 .highlighter .owl-carousel .owl-nav button.owl-next {
 }
-/*Banner1*/
-.jumbotron.jumbotron-fluid {
-	margin-bottom: 0;
-	background-color: #d3e7e8;
-	padding: 0;
-}
-.banner-oval {
-	width: 100%;
-	height: 100%;
-	background: #FF0099;
-	background-image: linear-gradient(45deg, #3023AE 0%, #FF0099 100%);
-	border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-	box-shadow: -10vmin 10vmin 0 rgba(255, 255, 255, 0.07);
-}
-}
+
 /* Why Bajaj*/	
 
 .whybajaj {
-	background: rgba(255,220,45,.05);
+	background: rgba(255,94,35,0.05);
 }
 .whybajaj .col-lg-4 {
 	flex: 0 0 32.67%;
@@ -263,12 +373,13 @@ header .navbar-light.affix .navbar-brand img {
 	padding-bottom: 20px;
 }
 .whybajaj .col-lg-4:nth-child(3) {
-	background: rgba(255,94,35,1);
+	background: rgba(237,28,36,1);
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	margin-left: 1%;
 	margin-right: 1%;
+		border: rgba(237,28,36,1 ) solid 5px;
 }
 .whybajaj .col-lg-4:nth-child(3) a {
 	color: #fff;
@@ -278,14 +389,12 @@ header .navbar-light.affix .navbar-brand img {
 	color: rgba(40,50,60,1);
 }
 .whybajaj.whynumbercontainer {
-	background: rgba(238,230,215,1);
+	background: rgba(255,94,35,.1);
 }
 .whybajaj.whynumbercontainer .whynumber {
-	padding-top: 0px;
+	font-size:1.25rem;
 }
-.whybajaj .whynumber {
-	padding-top: 30px;
-}
+
 .whybajaj .whynumber h5 {
 	font-size: 2.25rem;
 	margin: 0;
@@ -403,7 +512,7 @@ header .navbar-light.affix .navbar-brand img {
 	
 		/* What Bajaj  Client Says Testimonial*/
 .testimonial {
-	background: url(./images/shape1.svg) center bottom no-repeat;
+	background: url(../images/shape1.svg) center bottom no-repeat;
 }
 .testimonial .sec-heading h2 {
 }
@@ -414,7 +523,7 @@ header .navbar-light.affix .navbar-brand img {
 	border-radius: 8px;
 	transition: 0.5s;
 	border: none;
-	margin-top: 50px;
+	margin-top: 80px;
 	margin-bottom: 80px;
 }
 .testimonial.card:hover {
@@ -425,7 +534,7 @@ header .navbar-light.affix .navbar-brand img {
 	box-sizing: border-box;
 	width: 100%;
 	min-height: 400px;
-	margin-top: -90px;
+	margin-top: -115px;
 	text-align: center;
 }
 .testimonial .card .box .img {
@@ -434,7 +543,7 @@ header .navbar-light.affix .navbar-brand img {
 	margin: 0 auto 50px;
 	border-radius: 50%;
 	overflow: hidden;
-	box-shadow: 0px 0px 3px 1px rgba(40, 50, 60, .1);
+	box-shadow: 0px 0px 3px 2px rgba(40, 50, 60, .1);
 	border: #ffffff 5px solid;
 }
 .testimonial .card .box .img img {
@@ -444,7 +553,7 @@ header .navbar-light.affix .navbar-brand img {
 .testimonial .card .box h2 {
 	font-size: 18px;
 	color: rgba(40,50,60,.9);
-	margin: 40px auto;
+	margin:40px auto 0;
 	font-weight: 500;
 }
 .testimonial .card .box p {
@@ -452,9 +561,7 @@ header .navbar-light.affix .navbar-brand img {
 	font-size: 1.25rem;
 	line-height: 2;
 }
-.testimonial .carousel-indicators li {
-	background-color: rgba(40, 50, 60, 1);
-}
+
 .testimonial .testimg-left {
 	position: relative;
 	left: 0;
@@ -491,13 +598,11 @@ header .navbar-light.affix .navbar-brand img {
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
-.bajajpartners .partnerbox .partner-logo .col-md-6 {
+.bajajpartners .partnerbox .partner-logo .col-md-4 {
 	text-align: center;
 	margin-bottom: 50px;
 }
-.bajajpartners .carousel-indicators li {
-	background-color: rgba(40, 50, 60, 1);
-}
+
 /* Bajaj Capital Partners  End*/
 
 
@@ -508,8 +613,8 @@ header .navbar-light.affix .navbar-brand img {
 .homeblog .card {
 	box-shadow: 0px 2px 3px 1px rgba(40, 50, 60, 0.15);
 	margin: 5px;
-height:490px;
-	min-height:490px;
+height:520px;
+	min-height:520px;
 }
 .homeblog .card h5 {
 	font-size: 1.125rem;
@@ -520,6 +625,9 @@ height:490px;
 
 	    
 }
+.homeblog .card .card-img-top{
+	height:300px;
+	}
 .homeblog .card p{
 	 display: -webkit-box;
   -webkit-line-clamp: 6;
@@ -610,7 +718,7 @@ height:490px;
 	list-style-type: none;
 }
 .awards .borderbox::before {
-	background: url(./images/awards-draw.svg) top right no-repeat;
+	background: url(../images/awards-draw.svg) top right no-repeat;
 	background-size: 400px 300px;
 	content: '';
 	display: block;
@@ -621,7 +729,7 @@ height:490px;
 	position: absolute;
 }
 .awards .borderbox .leftbox:after {
-	background: url(./images/fireworks.svg) bottom left no-repeat;
+	background: url(../images/fireworks.svg) bottom left no-repeat;
 	background-size: 400px 300px;
 	content: '';
 	position: absolute;
@@ -686,7 +794,7 @@ footer .ulitem .contact li:nth-child(3) a {
 	top: 0;
 	left: 0;
 	z-index: -1;
-	background: #fffdf4 url(./images/shape1.svg) 0 0 no-repeat;
+	background: #fffdf4 url(../images/shape1.svg) 0 0 no-repeat;
 	-webkit-transform: rotate(180deg);
 	-moz-transform: rotate(180deg);
 	-ms-transform: rotate(180deg);
@@ -719,7 +827,7 @@ footer .ulitem .contact li:nth-child(3) a {
 	width: 100%;
 }
 .whybajaj-capital {
-	background: url(./images/why-bg.jpg) no-repeat bottom;
+	background: url(../images/why-bg.jpg) no-repeat bottom;
 	background-size: cover;
 	min-height: 80vh;
 }
@@ -863,10 +971,7 @@ article.blog .sec-heading h1{
     font-size: 1rem;
     border-bottom: 1px solid rgba(40,50,60,.1);
 }
-.sec-heading h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
+
 
 
 
@@ -1040,10 +1145,10 @@ header .navbar-light.affix .navbar-brand img {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
+...
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
+...
 }

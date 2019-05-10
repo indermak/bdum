@@ -43,7 +43,7 @@ $(document).ready(function(){
   dots: false,
   autoplay: true,
   autoplayHoverPause: true,
-  autoplayTimeout: 2500,
+  autoplayTimeout: 8000,
        
         responsive:{
             0:{
