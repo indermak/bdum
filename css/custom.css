@@ -1,0 +1,1049 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'bajaj';
+	src: url(fonts/sofiaprolight.woff2) format("woff2"), url(fonts/sofiaprolight.woff) format("woff");
+	font-weight: 300;
+}
+@font-face {
+	font-family: 'bajaj';
+	src: url(fontss/sofiaproregular.woff2) format("woff2"), url(fonts/sofiaproregular.woff) format("woff");
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'bajaj';
+	src: url(fonts/sofiapromedium.woff2) format("woff2"), url(fonts/sofiapromedium.woff) format("woff");
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'bajaj';
+	src: url(fonts/sofiaprobold.woff2) format("woff2"), url(fonts/sofiaprobold.woff) format("woff");
+	font-weight: 700;
+}
+html {
+	scroll-behavior: smooth;
+}
+html, body {
+	height: 100%;
+	padding-top: 43px;
+}
+body {
+	font-family: 'bajaj';
+	margin: 0;
+	font-size: 16px;
+	font-weight: 400;
+	color: #28323C;
+}
+:root {
+	font-size: 16px;
+	font-weight: 400;
+}
+/** Common **/
+bred {
+	color: #ED1C24;
+}
+.bred {
+	color: #ed1c24;
+}
+.byellow {
+	color: #FFDC2D;
+}
+.green {
+	color: #00BA7E;
+}
+.bgyellow {
+	background: rgba(255,220,45,.1);
+}
+.btn-primary {
+	min-width: 180px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.000em;
+	font-weight: normal;
+	text-align: center;
+	color: #fff;
+	border-radius: 56px;
+	background: #ED1C24;
+	outline: none;
+	border: 0;
+	font-family: 'bajaj';
+	cursor: pointer;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+.btn-primary:hover {
+	background: rgba(237,29,37,.8);
+}
+.btn-outline-primary{
+	color: #ED1C24;
+	border-color: #ED1C24;
+	    border-radius: 56px;
+}
+
+.btn-outline-primary:hover {
+background-color: #ED1C24;
+border-color: #ED1C24;
+}
+.viewall {
+	text-align: center;
+	margin: 0 auto;
+	width: 100px;
+	display: block;
+	color: rgba(40,50,60,1);
+}
+.viewall:hover {
+	color: rgba(40,50,60,.9);
+	text-decoration: none;
+}
+.btn-link {
+	display: inline-block;
+	color: #000;
+	text-decoration: none;
+}
+.btn-link::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #000;
+	transition: width .3s;
+}
+.btn-link:hover::after {
+	width: 100%;
+	transition: width .3s;
+}
+.pt60 {
+	padding-top: 60px;
+}
+.pt80 {
+	padding-top: 80px;
+}
+.pt100 {
+	padding-top: 100px;
+}
+.pb60 {
+	padding-bottom: 60px;
+}
+.pb80 {
+	padding-bottom: 80px;
+}
+.pb100 {
+	padding-bottom: 100px;
+}
+.sec-heading {
+	font-size: 1.25rem;
+	margin-bottom: 50px;
+}
+.sec-heading h1 {
+	font-size: 3.75rem;
+	font-weight: 600;
+	padding-bottom: 15px;
+}
+.sec-heading h2 {
+	font-size: 2.25rem;
+	margin-bottom: 30px;
+}
+/* Header Section */
+
+header .navbar-brand img {
+	width: 232px;
+	height: 45px;
+}
+header .navbar {
+	box-sizing: border-box;
+	padding: 1rem;
+	-webkit-transition: padding 0.2s ease;
+	-moz-transition: padding 0.2s ease;
+	-o-transition: padding 0.2s ease;
+	transition: padding 0.2s ease;
+	background: #fff;
+	font-size: 1rem;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: rgba(40,50,60,1);
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.navbar-light .navbar-nav .active>.nav-link {
+	color: #ed1c24;
+}
+.navbar-light .primary-btn {
+	min-width: 150px;
+	margin-right: 20px;
+}
+.navbar-light .fa-search {
+	font-size: 1rem;
+	color: rgba(40,50,60,.6);
+	margin-left: 20px;
+}
+.affix {
+	padding-top: 0.2em !important;
+	padding-bottom: 0.2em !important;
+	-webkit-transition: padding 0.2s linear;
+	-moz-transition: padding 0.2s linear;
+	-o-transition: padding 0.2s linear;
+	transition: padding 0.2s linear;
+	box-shadow: 0 0.125rem 0.1875rem 0 rgba(0,0,0,.1);
+}
+.navbar-light.affix .primary-btn {
+	height: 40px;
+	line-height: 40px;
+}
+header .navbar-light.affix .navbar-brand img {
+	width: 200px;
+	height: 39px;
+}
+/*Owl Carousel Highlighter */
+
+.highlighter {
+	background: rgba(40,50,60,.1);
+	font-size: 1rem;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-weight: 400;
+}
+.highlighter .iconbox img {
+	width: 64px;
+	display: block;
+	margin-right: 20px;
+	float: left;
+}
+.highlighter .iconbox h5 {
+	margin: 0;
+	padding: 5px 0;
+}
+.highlighter .owl-carousel .owl-nav button.owl-next {
+}
+/*Banner1*/
+.jumbotron.jumbotron-fluid {
+	margin-bottom: 0;
+	background-color: #d3e7e8;
+	padding: 0;
+}
+.banner-oval {
+	width: 100%;
+	height: 100%;
+	background: #FF0099;
+	background-image: linear-gradient(45deg, #3023AE 0%, #FF0099 100%);
+	border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+	box-shadow: -10vmin 10vmin 0 rgba(255, 255, 255, 0.07);
+}
+}
+/* Why Bajaj*/	
+
+.whybajaj {
+	background: rgba(255,220,45,.05);
+}
+.whybajaj .col-lg-4 {
+	flex: 0 0 32.67%;
+	max-width: 32.6%;
+	text-align: left;
+	background: #fff;
+	border: rgba(255,94,35,1) solid 5px;
+	cursor: pointer;
+	padding: 0;
+	font-size: 1.15rem;
+}
+.whybajaj .col-lg-4:hover {
+	background: rgba(255,94,35,1);
+	color: #fff;
+}
+.whybajaj .col-lg-4 a {
+	color: rgba(40,50,60,1);
+	padding: 40px 30px;
+	display: block;
+}
+.whybajaj .col-lg-4 a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+.whybajaj .col-lg-4 h4 {
+	font-size: 2rem;
+	padding-bottom: 20px;
+}
+.whybajaj .col-lg-4:nth-child(3) {
+	background: rgba(255,94,35,1);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+.whybajaj .col-lg-4:nth-child(3) a {
+	color: #fff;
+}
+.whybajaj .col-lg-4:nth-child(3):hover, .whybajaj .col-lg-4:nth-child(3) a:hover {
+	background: #fff;
+	color: rgba(40,50,60,1);
+}
+.whybajaj.whynumbercontainer {
+	background: rgba(238,230,215,1);
+}
+.whybajaj.whynumbercontainer .whynumber {
+	padding-top: 0px;
+}
+.whybajaj .whynumber {
+	padding-top: 30px;
+}
+.whybajaj .whynumber h5 {
+	font-size: 2.25rem;
+	margin: 0;
+	font-weight: 600;
+}
+/* Why Bajaj End*/				
+				
+/* What's Trending in bajaj capital*/						
+.trendingcard .nav-pills {
+	border-bottom: rgba(40,50,60,.1) solid 1px;
+}
+.trendingcard .nav-pills .nav-link {
+	color: rgba(40,50,60,1);
+}
+.trendingcard .nav-pills .nav-link:after {
+	content: '';
+	display: block;
+	position: relative;
+	bottom: -10px;
+	width: 0;
+	height: 2px;
+	background: rgba(237,28,36,1);
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-webkit-transition: 0.5s;
+}
+.trendingcard .nav-pills .nav-link.active {
+	color: rgba(237,28,36,1);
+	background: none;
+}
+.trendingcard .nav-pills .nav-link.active:after, .trendingcard .nav-pills .nav-link:hover:after {
+	width: 100%;
+}
+.trendingcard .card-wrapper {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+	justify-content: space-between;
+	-ms-flex-pack: space-between;
+	overflow: auto;
+	overflow-y: hidden;
+	padding: 20px;
+}
+.trendingcard .card-wrapper .card {
+	min-width: 320px;
+	max-width: 320px;
+	width: 100%;
+	padding: 25px 25px 25px 25px;
+	margin-bottom: 30px;
+	box-shadow: 0px 2px 3px 1px rgba(40, 50, 60, 0.15);
+	border: none;
+}
+.trendingcard .card-wrapper .card .card-img-top {
+	width: 230px;
+	height: 145px;
+	margin: 0 auto;
+}
+.trendingcard .card-wrapper .card .card-body {
+	padding: 15px 0 0 0;
+}
+.trendingcard .card-wrapper .card .card-body .card-title {
+	font-size: 1.125rem;
+}
+.trendingcard .card-wrapper .card .card-body .annual-fee {
+	font-size: 0.875rem;
+	color: rgba(40, 50, 60, 0.6);
+	display: block;
+	padding-bottom: 0;
+	line-height: 18px;
+	margin-bottom: 15px;
+}
+.trendingcard .card-wrapper .card .card-body .annual-fee span {
+	font-size: 1rem;
+	display: block;
+	color: #28323c;
+	margin-top: 5px;
+}
+.trendingcard .card-wrapper .card .card-body .rewards h5 {
+	display: inline-block;
+	color: rgba(40, 50, 60, 0.6);
+	margin: 0px;
+	min-height: 0;
+	font-size:0.875rem;
+}
+.trendingcard .card-wrapper .card .card-body ul {
+	font-size: 0.875rem;
+	margin-top: 5px;
+	list-style-position: outside;
+	padding-left: 9px;
+}
+.trendingcard .card-wrapper .card .card-body ul li {
+	display: block;
+	color: #28323c;
+	font-size: 0.875rem;
+	margin-right: 10px;
+	margin-bottom: 8px;
+	position: relative;
+}
+.trendingcard .card-wrapper .card .card-body ul li:before {
+	content: "•";
+	position: absolute;
+	left: -10px;
+}
+.trendingcard .card-wrapper .card .card-body .btn-primary {
+	width: 200px;
+	margin: 0 auto;
+	display: block;
+}
+/* What's Trending in bajaj capital End*/
+	
+		/* What Bajaj  Client Says Testimonial*/
+.testimonial {
+	background: url(./images/shape1.svg) center bottom no-repeat;
+}
+.testimonial .sec-heading h2 {
+}
+.testimonial .card {
+	min-height: 360px;
+	background: #fff;
+	box-shadow: 0px 0px 4px 1px rgba(40, 50, 60, 0.15);
+	border-radius: 8px;
+	transition: 0.5s;
+	border: none;
+	margin-top: 50px;
+	margin-bottom: 80px;
+}
+.testimonial.card:hover {
+	box-shadow: 0 30px 70px rgba(0,0,0,.2);
+}
+.testimonial .card .box {
+	padding: 40px;
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 400px;
+	margin-top: -90px;
+	text-align: center;
+}
+.testimonial .card .box .img {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 50px;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0px 0px 3px 1px rgba(40, 50, 60, .1);
+	border: #ffffff 5px solid;
+}
+.testimonial .card .box .img img {
+	width: 100%;
+	height: 100%;
+}
+.testimonial .card .box h2 {
+	font-size: 18px;
+	color: rgba(40,50,60,.9);
+	margin: 40px auto;
+	font-weight: 500;
+}
+.testimonial .card .box p {
+	color: rgba(40,50,60,.8);
+	font-size: 1.25rem;
+	line-height: 2;
+}
+.testimonial .carousel-indicators li {
+	background-color: rgba(40, 50, 60, 1);
+}
+.testimonial .testimg-left {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+.testimonial .testimg-left .img1 {
+	width: 120px;
+	position: absolute;
+	right: 20%;
+	top: 50%
+}
+.testimonial .testimg-left .img2 {
+	width: 140px;
+	position: absolute;
+	left: 15%;
+	top: 50%;
+}
+.testimonial .testimg-left .img3 {
+	width: 60px;
+	position: absolute;
+	right: 15%;
+	top: 70%;
+}
+/* What Bajaj  Client Says Testimonial End*/
+		
+/* Bajaj Capital Partners */
+.bajajpartners {
+	background: rgba(255,220,45,.05);
+}
+.bajajpartners .partnerbox {
+	border-radius: 4px;
+	background: #fff;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.bajajpartners .partnerbox .partner-logo .col-md-6 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+.bajajpartners .carousel-indicators li {
+	background-color: rgba(40, 50, 60, 1);
+}
+/* Bajaj Capital Partners  End*/
+
+
+
+
+
+/* Bajaj Blog */
+.homeblog .card {
+	box-shadow: 0px 2px 3px 1px rgba(40, 50, 60, 0.15);
+	margin: 5px;
+height:490px;
+	min-height:490px;
+}
+.homeblog .card h5 {
+	font-size: 1.125rem;
+	color: rgba(40, 50, 60, .8);
+}
+.homeblog .card h4 {
+	margin-bottom: 15px;
+
+	    
+}
+.homeblog .card p{
+	 display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  }
+.homeblog .card span {
+	color:rgba(40, 50, 60, .6);
+	}
+.homeblog .card .btn-outline-primary{
+	min-width:130px;
+	}
+.homeblog .card .link {
+	font-size: 1rem;
+}
+.link {
+	color: #ED1C24;
+	border-bottom: 2px solid #ED1C24;
+	text-decoration: none;
+}
+.link:hover, link:active {
+	color: #ED1C24;
+	text-decoration: none;
+}
+.link::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #000;
+	transition: width .3s;
+}
+/* Bajaj Blog   End*/		
+
+
+/* Bajaj Awards */
+.bajajawards {
+}
+.bajajawards .card {
+	box-shadow: 0px 2px 3px 1px rgba(40, 50, 60, 0.15);
+	border: none;
+	padding: 25px;
+	margin: 5px;
+}
+.bajajawards .card .awardimg img {
+	margin-right: 15px;
+	width: 100px;
+	float: left;
+	border-radius: 4px;
+}
+.bajajawards .card .awardimg {
+	color: rgba(40, 50, 60, .8);
+}
+.bajajawards .card .awardimg h4 {
+	font-size: 1.25rem;
+	padding-top: 10px;
+	color: rgba(40, 50, 60, 1);
+}
+.bajajawards .card .card-body {
+	color: rgba(40, 50, 60, .8);
+	line-height: 1.7;
+	padding: 30px;
+}
+.awards .borderbox {
+	position: relative;
+	padding-bottom: 36px;
+	border: 10px solid #FFDC2D;
+	margin: 0 30px;
+	z-index: 2;
+}
+.awards .borderbox .leftbox {
+	margin-left: -50px;
+	background: #fff;
+	margin-top: 100px;
+}
+.awards .borderbox .rightbox {
+	background: #fff;
+	margin-top: 300px;
+}
+.awards .borderbox .rightbox .awardlist {
+	margin: 0;
+	padding: 0;
+}
+.awards .borderbox .rightbox .awardlist li {
+	margin: 0 0 20px 0;
+	padding: 0 0 5px 20px;
+	border-left: solid 5px #FFDC2D;
+	list-style-type: none;
+}
+.awards .borderbox::before {
+	background: url(./images/awards-draw.svg) top right no-repeat;
+	background-size: 400px 300px;
+	content: '';
+	display: block;
+	transition: width .3s;
+	width: 400px;
+	right: 0;
+	height: 100%;
+	position: absolute;
+}
+.awards .borderbox .leftbox:after {
+	background: url(./images/fireworks.svg) bottom left no-repeat;
+	background-size: 400px 300px;
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 400px;
+	height: 100%;
+	top: 0;
+}
+/* Bajaj Awards   End*/			
+
+
+
+/* -Bajaj Capital Footer*/
+footer {
+	border-top: rgba(40, 50, 60, .1) solid 1px;
+
+}
+footer .footer-logo {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: left;
+	color: rgba(40, 50, 60,1);
+}
+footer .footer-logo .logo {
+	margin-bottom: 15px;
+}
+footer h5 {
+	color: rgba(40, 50, 60,1);
+	padding-bottom: 10px;
+}
+footer .ulitem > ul > li a {
+	color: #ED1C24;
+	font-weight: 500;
+	line-height: 2.25;
+	text-align: left;
+}
+footer .ulitem .contact li:nth-child(3) a {
+	margin-right: 15px;
+	color: #0e0b1b;
+	font-size: 1.125em;
+	text-decoration: none;
+}
+/* Bajaj Capital Footer End*/
+
+
+
+
+
+/*========================================================================
+    About Us Css Start
+===========================================================================*/
+
+
+.aboutbanner {
+}
+.aboutbanner:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 600px;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background: #fffdf4 url(./images/shape1.svg) 0 0 no-repeat;
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.aboutbanner .btn-slide {
+	border-radius: 56px;
+	background: rgba(40,50,60,1);
+	width: 360px;
+	padding: 10px;
+}
+.aboutbanner .btn-slide .btn-secondary {
+	background: rgba(40,50,60,1);
+	border: none;
+}
+.aboutbanner .btn-slide .btn-secondary:not(:disabled):not(.disabled).active {
+	background: #fff;
+	color: rgba(40,50,60,1);
+	border-radius: 56px;
+}
+/* Why Bajaj Capital  */
+.who-what .sec-heading p, .whybajaj-capital .sec-heading p {
+	font-size: 1rem;
+	color: rgba(40,50,60,.8);
+}
+.who-what .badge-pill {
+	margin-bottom: 15px;
+	padding: 15px;
+	width: 100%;
+}
+.whybajaj-capital {
+	background: url(./images/why-bg.jpg) no-repeat bottom;
+	background-size: cover;
+	min-height: 80vh;
+}
+.whybajaj-capital .whybajaj {
+	background: none;
+}
+.bajajmission.whybajaj .col-lg-4 {
+	border: rgba(255,220,45,.05) solid 5px;
+}
+.whybajaj-capital .col-lg-4:nth-child(3),  .bajajmission.whybajaj .col-lg-4:hover {
+	background: rgba(255,220,45,.07);
+	border: rgba(255,220,45,.05) solid 5px;
+}
+.bajajmission.whybajaj .col-lg-4:hover {
+}
+.subsidiary-bajaj .subsidiary {
+	padding: 20px;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	box-shadow: 0px 2px 3px 1px rgba(40, 50, 60, 0.15);
+	border: none;
+}
+/* Why Bajaj Capital   End*/
+
+/*  Bajaj Capital Blog Page Start */
+
+.blog-header .form-control, .blog-header .input-group>.form-control:not(:last-child) {
+	border-radius: 56px;
+	height: 66px;
+	font-size: 1.25rem;
+	padding-left: 36px;
+	color: rgba(40, 50, 60, .8);
+}
+.blog-header .input-group .input-group-addon {
+    margin-left: 0;
+    z-index: 3;
+    padding-right: 20px;
+    position: absolute;
+    right: 0;
+}
+.blog-header .input-group .input-group-addon .fa {
+	line-height: 66px;
+	color: rgba(40, 50, 60, .6);
+}
+.blog-header.aboutbanner .btn-badge {
+	background: none;
+}
+.blog-header .sec-heading {
+	margin-bottom: 30px;
+}
+.blog-header.aboutbanner .btn-badge > .btn-secondary {
+	min-width: 120px;
+	border-radius: 56px;
+	background: rgba(40, 50, 60, .1);
+	 color:rgba(40, 50, 60, 1);
+	border: none;
+	    margin: 0 5px;
+}
+
+
+.blog-side leadcard {
+	font-size:.875rem;
+	}
+	
+		.blog-side .leadcard.sticky-top{
+			    top: 80px;
+			}
+	.blog-side .leadcard a{
+		color: #ED1C24;
+		}
+
+.blog-header.aboutbanner .btn-badge > .btn-secondary.active {
+	background: #FFDC2D;
+}
+
+article.blog {
+    padding-top: 0;
+}
+
+article.blog .sec-heading h1{
+	font-size: 2rem;
+    padding-bottom: 5px;
+    padding-top: 15px;
+	}
+    article.blog h4 {
+        font-size: 1.500em;
+    }
+
+    article.blog h5 {
+      
+        font-size: 1.25em;
+    }
+
+    article.blog h6 {
+
+        font-size: 1.1em;
+    }
+
+
+    article.blog a {
+        color: #0e0b1b;
+    }
+
+    article.blog ul.links {
+        padding-left: 20px;
+        font-family: SofiaProMedium;
+    }
+
+        article.blog ul.links li {
+            color: black;
+            list-style-type: none;
+        }
+
+    article.blog ul li {
+        margin-bottom: .7em;
+    }
+
+
+    article.blog ul.links li:before {
+        content: '\2022 ';
+        padding-right: 0.5em;
+    }
+
+    article.blog div.pb-5 {
+        z-index: 0;
+        -webkit-transform: translateZ( 0 );
+        transform: translateZ( 0 );
+        -webkit-transition: -webkit-transform 0.6s ease-in-out;
+        transition: transform 0.6s ease-in-out;
+    }
+
+    article.blog div.clickspace {
+        box-sizing: border-box;
+        padding-top: 80px !important;
+	}
+.relatedblog{
+    background: rgba(40,50,60,0.02);
+	}
+.relatedblog .sec-heading {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(40,50,60,.1);
+}
+.sec-heading h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/*  Blog Page Start  */
+
+
+
+/* Blog Page Start   End*/
+
+/*  Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+html, body {
+	font-size: 14px;
+}
+body {
+}
+:root {
+	font-size: 14px;
+}
+.pt60 {
+	padding-top: 30px;
+}
+.pt80 {
+	padding-top: 40px;
+}
+.pt100 {
+	padding-top: 50px;
+}
+.pb60 {
+	padding-bottom: 30px;
+}
+.pb80 {
+	padding-bottom: 40px;
+}
+.pb100 {
+	padding-bottom: 50px;
+}
+.sec-heading {
+	margin-bottom: 30px;
+}
+.sec-heading h2 {
+	margin-bottom: 20px;
+}
+.trendingcard .nav-pills .nav-link {
+}
+.trendingcard .card-wrapper .card {
+	min-width: 300px;
+	max-width: 300px;
+}
+.testimonial .card .box .img {
+	margin: 0 auto 30px;
+}
+.testimonial .card .box p {
+	line-height: 1.7;
+}
+.testimonial .card .box h2 {
+	margin-bottom: 0;
+}
+.whybajaj .col-lg-4 {
+	flex: 0 0 100%;
+	max-width: 100%;
+	padding: 20px 15px;
+}
+.whybajaj .col-lg-4:nth-child(3) {
+	margin: 0;
+}
+.bajajpartners .partnerbox .partner-logo .col-md-6 img {
+	width: 100%;
+	max-width: 100%;
+	height: inherit;
+}
+.homeblog .sec-heading .blogimg {
+	width: 100%;
+	max-width: 100%;
+}
+.awards .borderbox {
+	margin: 0;
+}
+.awards .borderbox .leftbox {
+	margin-left: 0;
+	margin-top: 220px;
+}
+.awards .borderbox .leftbox:after {
+	display: none;
+}
+.awards .borderbox .rightbox {
+	margin-top: 0;
+}
+.awards .borderbox::before {
+	top: -60px;
+	width: 100%;
+}
+footer .featurette-divider {
+	margin-bottom: 30px;
+}
+
+/** Blog Page **/
+.blog-header.aboutbanner .btn-badge > .btn-secondary{
+	margin-bottom:5px;}
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+.navbar-light .navbar-nav .nav-link {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+header .navbar-brand img {
+	width: 160px;
+	height: inherit;
+}
+.navbar .navbar-collapse .btn-primary {
+	min-width: 220px;
+	height: 46px;
+	line-height: 46px;
+}
+header .navbar-light.affix .navbar-brand img {
+	width: 150px;
+	height: inherit;
+}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
