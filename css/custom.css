@@ -169,7 +169,7 @@ border-color: #ED1C24;
 .sec-heading h1 {
 	font-size: 3.75rem;
 	font-weight: 600;
-	padding-bottom: 15px;
+	padding-bottom: 5px;
 	    color: rgba(40,50,60,1);
 }
 .sec-heading h2 {
@@ -237,6 +237,7 @@ header .navbar-light.affix .navbar-brand img {
     width: 180px;
     background-size: 18px;
 	margin-left:15px;
+	    border-radius: 56px;
 	
 }
 
@@ -745,10 +746,11 @@ height:520px;
 /* -Bajaj Capital Footer*/
 footer {
 	border-top: rgba(40, 50, 60, .1) solid 1px;
+	padding-bottom:20px;
 
 }
 footer .footer-logo {
-	font-size: 1rem;
+	font-size: .875rem;
 	font-weight: 400;
 	line-height: 1.5;
 	text-align: left;
@@ -772,6 +774,38 @@ footer .ulitem .contact li:nth-child(3) a {
 	color: #0e0b1b;
 	font-size: 1.125em;
 	text-decoration: none;
+}
+footer .ulitem .contact li:nth-child(1) .time {
+    font-size: 0.625em;
+}
+footer .ulitem .contact li:nth-child(1) .time {
+    font-size: 0.625em;
+}
+footer .ulitem .contact li:nth-child(1) .time strong {
+    width: 100%;
+    float: left;
+}
+
+
+footer .footer-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+	border-top: rgba(40, 50, 60, .1) solid 1px;
+			font-size: .875rem;
+	
+	}	
+	footer .footer-link {
+			font-size: .875rem;
+		}	footer .footer-link .col-md-9{
+			text-align:right;
+			}
+	footer .footer-link  a {
+		text-align:right;
+    font-weight: 500;
+    color: #ff001e;
+    cursor: pointer;
+	padding-left:10px;
 }
 /* Bajaj Capital Footer End*/
 
@@ -810,7 +844,17 @@ footer .ulitem .contact li:nth-child(3) a {
 .aboutbanner .btn-slide .btn-secondary {
 	background: rgba(40,50,60,1);
 	border: none;
+	    border-radius: 56px;
+		    border-top-right-radius: 56px;
+    border-bottom-right-radius:56px;
+	    margin: 0 5px;
 }
+
+.aboutbanner .btn-slide.btn-group>.btn-group:not(:last-child)>.btn,
+ .aboutbanner .btn-slide.btn-group>.btn:not(:last-child):not(.dropdown-toggle){
+			    border-top-right-radius: 56px;
+    border-bottom-right-radius:56px;
+	}
 .aboutbanner .btn-slide .btn-secondary:not(:disabled):not(.disabled).active {
 	background: #fff;
 	color: rgba(40,50,60,1);
@@ -1021,18 +1065,40 @@ article.blog .sec-heading h1{
   color: white;
 }
 
-/*  Blog Page Start  */
 
 
 
 /* Blog Page Start   End*/
+
+/* Branch Locator Start*/
+.aboutbanner.branch-banner .btn-slide{
+	width:100%;
+	margin-bottom: 20px;
+	}
+	
+	.aboutbanner.branch-banner .sec-heading{
+		    margin-bottom: 20px;
+		}
+.branch-main .card {
+
+    height: 250px;
+    min-height: 250px;
+}
+
+
+ .aboutbanner.branch-banner .form-control{   border-radius: 56px;
+    padding: 10px 20px;
+    height: 56px;}
+/* Branch Locator   End*/
+
+
 
 /*  Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
+@media only screen and (max-width:575.98px) {
 html, body {
 	font-size: 14px;
 }
@@ -1059,18 +1125,29 @@ body {
 .pb100 {
 	padding-bottom: 50px;
 }
+
 .sec-heading {
 	margin-bottom: 30px;
 }
 .sec-heading h2 {
 	margin-bottom: 20px;
 }
+
+.homebanner.jumbotron.jumbotron-fluid h1 {
+    font-size: 1.75rem;
+    padding-top: 0;
+}
+
+
 .trendingcard .nav-pills .nav-link {
 }
 .trendingcard .card-wrapper .card {
 	min-width: 300px;
 	max-width: 300px;
 }
+.testimonial{
+	padding-bottom:0;
+	}
 .testimonial .card .box .img {
 	margin: 0 auto 30px;
 }
@@ -1099,6 +1176,7 @@ body {
 }
 .awards .borderbox {
 	margin: 0;
+	border:none;
 }
 .awards .borderbox .leftbox {
 	margin-left: 0;
@@ -1107,6 +1185,7 @@ body {
 .awards .borderbox .leftbox:after {
 	display: none;
 }
+
 .awards .borderbox .rightbox {
 	margin-top: 0;
 }
@@ -1114,16 +1193,82 @@ body {
 	top: -60px;
 	width: 100%;
 }
-footer .featurette-divider {
-	margin-bottom: 30px;
-}
+
+/** About */
+.aboutbanner .btn-slide{
+	width:100%;
+	}
 
 /** Blog Page **/
 .blog-header.aboutbanner .btn-badge > .btn-secondary{
 	margin-bottom:5px;}
+.aboutbanner.branch-banner .btn-slide {
+    width: 100%;
+    display: block;
+	background:none;
+	    border-radius: 0;
+		    margin-bottom: 0;
+}
+
+
+.aboutbanner .btn-slide .btn-secondary:not(:disabled):not(.disabled).active{
+		 background:rgba(40,50,60,1);
+		 color:#fff;
+	}
+	.aboutbanner.branch-banner.pb60 {
+    padding-bottom: 10px;
+		}
+		.branch-main .card{
+			height:inherit;
+			min-height:inherit;
+			}
+.aboutbanner.branch-banner .btn-slide .btn-secondary	{
+	 width: 100%;
+    display: block;
+	 margin-bottom: 10px;
+	 background:rgba(40,50,60,.6)
+	}
+	
+	
+	
+	
+	.aboutbanner.branch-banner .sec-heading {
+		    margin-bottom: 0;
+			}
+	.aboutbanner.branch-banner .sec-heading h1{
+	font-size: 1.5rem;
+    padding: 0;
+		}
+		
+		.aboutbanner.branch-banner .form-control {
+    border-radius: 56px;
+	height:46px;
+    padding: 0px 20px;
+   
+}
+
+
+
+/** Foooter */
+footer .footer-text .col-md-3{
+	padding-bottom:10px;
+	}
+footer .footer-text {
+    padding-top: 20px;
+    margin-top: 0px;
+	}	
+	
+	
+	
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+	.pb60 {
+    padding-bottom: 40px;
+}
+.pt60 {
+    padding-top: 40px;
+}
 .navbar-light .navbar-nav .nav-link {
 	padding-right: 10px;
 	padding-left: 10px;
@@ -1141,14 +1286,20 @@ header .navbar-light.affix .navbar-brand img {
 	width: 150px;
 	height: inherit;
 }
+/* Branch */
+.branch-main .card{
+	    height: 300px;
+    min-height:300px;
+	}
+
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-...
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-...
+
 }
