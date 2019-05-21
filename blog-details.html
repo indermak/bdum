@@ -47,36 +47,36 @@
 <main role="main"> 
   
   <!--Banner -->
-  <section class="aboutbanner blog-header   pb60 pt60">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 offset-md-2 sec-heading text-center">
-          <h1><img src="images/the-capital-blog.png" width="438" height="138" class="img-fluid"></h1>
-         
-          <form class="form " >
-			<div class="input-group ">
-    			<input class="form-control shadow-sm  border-0 " type="text" placeholder="Search Blog" aria-label="Search"  id="mysearch">
-    			<div class="input-group-addon" >
-    				<i class="fa fa-search"></i>
-    			</div>
-			</div>
-		</form>
-          </div>
-          
-          
-        <div class="col-md-8 offset-md-2 btn-badge   text-center">
+  <section class="aboutbanner blog-header blog-detail">
+  
+  
+  <div class="blog-banner">
+            <img src="images/home-carousel1.jpg" class="img-fluid">
+            <div class="container">
+                <div class="row align-items-center mt-5m">
+                    <div class="col-lg-12">
+                    
+                    
+                    <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+  </ol>
+</nav>
+                    
+       
+                  
+                  
+                  
+                    </div>
 
-          
-          <a href="" class="btn btn-secondary active"> All Article</a>  
-                <a href="" class="btn btn-secondary"> Mutual Fund</a>
-                      <a href="" class="btn btn-secondary"> Insurance</a>
-                            <a href="" class="btn btn-secondary"> Credit Card</a>        
-          
-         
-         
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+        
+        
+    
   </section>
   
   <!-- Bajaj Capital Blog Details -->
@@ -234,6 +234,7 @@
                 </div>
 
                 <div class="col-12 col-lg-4 blog-side ">
+                <div class="position-sticky sticky-top">
                     <div class="card-body ">
                 <h4 class="card-title">Tags</h4>
                 <a class="btn btn-light btn-sm mb-1" href="page-category.html">Mutual Fun</a>
@@ -243,115 +244,18 @@
                 <a class="btn btn-light btn-sm mb-1" href="page-category.html">Saving</a>
               </div>
 
-                    
-
-
-
-                
-                        <div class="card leadcard position-sticky sticky-top">
-                            <div class="card-body">
-                                <!--form to submit user info-->
-                                <div id="quotation-form-desktop">
-<script src="js/campaignservice.js"></script>
-
-<h5 class="card-title">Get advice from experts, for free, within 24 hours</h5>
-<div class="mainform" id="divreg">
-
-
-    <div class="form-group">
-        <input type="text" class="form-control my-input" maxlength="60" id="userName" placeholder="Name" autocomplete="off" onkeypress="return (event.charCode >= 65 &amp;&amp; event.charCode <= 90) || (event.charCode >= 97 &amp;&amp; event.charCode <= 122) || (event.charCode == 32) || event.which == 8" name="userName">
-        <p id="namevalid" style="display:none;" class="animated bounceInUp delay-04">
-            <span class="icn-back mr-1 green">
-                <i class="fa fa-check green"> </i> Name looks good
-            </span>
-        </p>
-        <p id="nameinvalid" style="display: none;" class="animated bounceInUp delay-02">
-            <span class="icn-back mr-1">
-                <span id="nameinvalidmsg" class="red"></span>
-            </span>
-        </p>
-
-        <!-- <input type="text" name="name" class="form-control my-input" id="name" placeholder="Name"> -->
-    </div>
-    <div class="form-group">
-        <input type="text" class="form-control my-input" id="userEmail" autocomplete="off" placeholder="Email" maxlength="100" name="userEmail">
-        <p id="userEmailvalid" style="display: none;" class="green animated bounceInUp delay-02">
-            <span class="icn-back mr-1 green">
-                <i class="fa fa-check green"> </i> Email looks good
-            </span>
-        </p>
-        <p id="userEmailinvalid" style="display: none;" class="animated bounceInUp delay-02">
-            <span class="icn-back mr-1">
-                <span id="userEmailinvalidmsg" class="red"></span>
-            </span>
-        </p>
-        <!-- <input type="email" name="email" class="form-control my-input" id="email" placeholder="Email"> -->
-    </div>
-    <div class="form-group">
-        <input type="text" class="form-control my-input" id="userMob" placeholder="Mobile" name="userMob" autocomplete="off" onkeypress="return (event.charCode > 47 &amp;&amp; event.charCode <= 57) || event.which == 8" minlength="10" maxlength="10">
-        <p id="userMobvalid" style="display: none;" class="animated bounceInUp delay-02">
-            <span class="icn-back mr-1 green">
-                <i class="fa fa-check green"> </i> Mobile number looks good!
-            </span>
-        </p>
-        <p id="userMobinvalid" style="display: none;" class="animated bounceInUp delay-02">
-            <span class="icn-back mr-1">
-                <span id="userMobinvalidmsg" class="red"></span>
-            </span>
-        </p>
-    </div>
-    <p class="small mt-3">
-        </p><div class="text-center mb-3">
-            <button type="submit" id="btnsubmit" class="btn btn-primary"  onclick="return Validatecustomer();">Continue</button>
-            <div id="loader" class="btn btn-block btn-primary mt-2 " style="display:none"></div>
-        </div>
-    
-        By continuing, you provide consent and agree to our
-        <a target="_blank" href="https://onebajaj.capital/privacyPolicy" class=" red">Terms &amp; Conditions.</a>
-   
-
-    <p class="text-center mb-3">
-        <label id="lblMessage" class="green"></label>
-    </p>
-
-</div>
-<div class="OTPform" id="divOtp" style="display: none;">
-    <a style="width: 100px;" href="javascript:void(0)" id="backToHome" onclick="backToHome()" class=" btn-back text-center aligncenter"> <span class="icn-back"> <i class="fa fa-arrow-left"> </i> </span> Back </a>
-
-    <div class="form-group mt-4">
-        <input type="text" class="form-control my-input mb-2" autofocus id="userOTP" placeholder="Enter OTP" name="userOTP" autocomplete="off" required onkeypress="return (event.charCode > 47 &amp;&amp; event.charCode <= 57) || event.which == 8" minlength="6" maxlength="6">
-
-        <p id="userOtpinvalid" style="display: none;" class="red animated bounceInUp delay-02">
-            <span class="icn-back mr-1">
-                <span id="userOtpinvalidmsg" class="red"></span>
-            </span>
-        </p>
-        <p id="otpResend" class="green animated bounceInUp delay-02">
-            <span class="icn-back mr-1 green">
-                <i class="fa fa-check"> </i> You will recieve an OTP shortly.
-            </span>
-        </p>
-        <p class="pt-2 mb-2 ">
-            <br>
-            <button style="width: 130px; color:red; cursor:pointer;" onclick="SendOTP();" class="btn-block text-center aligncenter btn-link">
-                <strong>Resend OTP</strong>
-            </button>
-        </p>
-        <div class="text-center pt-1 btn-block">
-            <button type="submit" id="btnsubmitotp" class="btn btn-primary my-2 my-sm-0" disabled="" onclick="return ValidatecustomerOTP();">Submit</button>
-            <div id="loaderotp" class="btn btn-block mt-2 disabled" style="display:none"></div>
-
-        </div>
-    </div>
-</div>
-</div>
-                                <!--end form-->
-                            </div>
+                        <div class="card  shadow-sm getstarted">
+                        <div class="card-body ">
+                        <p> Lipsum Text Is Dummy Text</p>
+                          <!--  <img src="images/blog-get-started-bg.png" class="img-fluid">-->
+                            <a href="https://onebajaj.capital/onboarding1" class="btn btn-primary btn-orange wow fadeInUp" data-wow-delay="0.7s">Get Started Now
+                            </a>
                         </div>
+                    </div>
                     
-
-
-                    
+            
+         
+                  </div>
 
                
                 </div>
@@ -367,7 +271,15 @@
             
 
         </div>
-        </section>
+    </section>
+      
+  <div class="icon-bar d-lg-block d-md-none d-none">
+  <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a> 
+  <a href="#" class="twitter"><i class="fab fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fab fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+  <a href="#" class="youtube"><i class="fab fa-youtube"></i></a> 
+</div>
   <!-- Bajaj Capital Blog Details End -->
   
   
@@ -380,7 +292,7 @@
         
         <div class="col-lg-12 sec-heading">
     
-    <h2> Related Reading</h2>
+    <h2> Related Readings</h2>
     </div>
         
         <div class=" col-12 col-md-4 col-lg-4 col-sm-4 mb-4">
@@ -389,8 +301,7 @@
   <div class="card-body ">
 
     <h4>How Mutual funds will help you achieve your goals  </h4>
-    <p class="card-text">
-Mutual funds have become popular asset classes for individuals to invest.Mutual funds have become popular asset classes for individuals to invest.Mutual funds have become popular asset classes for individuals to invest. </p>
+    
       <span class="float-left pt-1"> Health Insurance</span><a href="#" class=" btn stretched-link btn-outline-primary float-right ">Read More</a>
   </div>
 </div>
@@ -401,8 +312,7 @@ Mutual funds have become popular asset classes for individuals to invest.Mutual 
   <div class="card-body ">
 
     <h4>How Mutual funds will help you achieve your goals  </h4>
-    <p class="card-text">
-Mutual funds have become popular asset classes for individuals to invest.Mutual funds have become popular asset classes for individuals to invest.Mutual funds have become popular asset classes for individuals to invest. </p>
+    
       <span class="float-left pt-1"> Health Insurance</span><a href="#" class=" btn stretched-link btn-outline-primary float-right ">Read More</a>
   </div>
 </div>
@@ -413,8 +323,7 @@ Mutual funds have become popular asset classes for individuals to invest.Mutual 
   <div class="card-body ">
 
     <h4>How Mutual funds will help you achieve your goals  </h4>
-    <p class="card-text">
-Mutual funds have become popular asset classes for individuals to invest.Mutual funds have become popular asset classes for individuals to invest.Mutual funds have become popular asset classes for individuals to invest. </p>
+    
       <span class="float-left pt-1"> Health Insurance</span><a href="#" class=" btn stretched-link btn-outline-primary float-right ">Read More</a>
   </div>
 </div>
