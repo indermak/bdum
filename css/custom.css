@@ -309,6 +309,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0087e0fd', e
 	    position: absolute;
     width: 100%;
     top: 530px;
+	z-index:99;
 
 		
 		}
@@ -666,14 +667,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0087e0fd', e
 }
 .bajajpartners .partnerbox {
 	border-radius: 4px;
-	background: #fff;
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
-.bajajpartners .partnerbox .partner-logo .col-md-4 {
+.bajajpartners .partnerbox .partner-logo .col-md-6 {
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
+	
 }
+.bajajpartners .partnerbox .partner-logo .col-md-6 .card{
+		box-shadow: 0px 2px 3px 1px rgba(40, 50, 60, 0.15);
+		border:none;
+		}
+.bajajpartners .partnerbox .partner-logo .col-md-6 img{
+	background:#fff;
+	padding:40px;
+	border-radius:6px;
+	
+	}
+
+
+.bajajpartners .partnerbox  .carousel-indicators{
+	bottom:-30px;
+	}
 /* Bajaj Capital Partners  End*/
 
 
@@ -1173,8 +1189,15 @@ footer .footer-link a {
         background: none;
         min-height: 320px;
         height: 320px;
+		color:#fff;
     }
-
+.blog-header.aboutbanner .blog-banner .sec-heading h1{
+	color:#fff;
+	    font-size: 2.75rem;
+	}
+	.blog-header.aboutbanner .blog-banner .sec-heading  p{
+		color:#fff;
+		}
 .blog-header.aboutbanner .blog-banner img {
             position: absolute;
             z-index: 0;
@@ -1188,12 +1211,13 @@ footer .footer-link a {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 300px;
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,258dc8+99&1+0,0+100 */
-background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(37,141,200,0.01) 99%, rgba(37,141,200,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(37,141,200,0.01) 99%,rgba(37,141,200,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(37,141,200,0.01) 99%,rgba(37,141,200,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00258dc8',GradientType=0 ); /* IE6-9 */
+	height: 408px;
+	
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&1+0,0.52+100 */
+background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.52) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0.52) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0.52) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#85000000',GradientType=0 ); /* IE6-9 */
 	opacity: 1;
 }
 
@@ -1205,19 +1229,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
         }
 
 	
-.blog-header.aboutbanner .blog-banner .breadcrumb{
+.blog-breadcumb  .breadcrumb{
 	background:none;
+	margin-bottom:0;
+	padding-left:0;
 	}	
 	
-.blog-header.aboutbanner .blog-banner .breadcrumb	li a{
-	    color: rgba(255,255,255,1);
+.blog-breadcumb  .breadcrumb	li a{
+	    color: rgba(40,50,60,1);
 		}
-.blog-header.aboutbanner .blog-banner .breadcrumb .breadcrumb-item.active,
-.blog-header.aboutbanner .blog-banner .breadcrumb .breadcrumb-item+.breadcrumb-item::before{
-	   color: rgba(255,255,255,.7);
+.blog-breadcumb  .breadcrumb .breadcrumb-item.active,
+.blog-breadcumb  .breadcrumb .breadcrumb-item+.breadcrumb-item::before{
+	   color: rgba(40,50,60,.7);
 	   }
 
-
+ .blog-side .tag-card{
+    padding-left: 0;
+    padding-right: 0;
+	}
 
 .blog-side .getstarted {
     padding-left: 0;
@@ -1258,9 +1287,7 @@ color:rgba(40,50,60,1);
 .blog-header.aboutbanner .btn-badge > .btn-secondary.active {
 	background: #FFDC2D;
 }
-article.blog {
-	padding-top: 0;
-}
+
 article.blog .sec-heading h1 {
 	font-size: 2rem;
 	padding-bottom: 5px;
@@ -1542,12 +1569,16 @@ body {
 }
 .blog-header.aboutbanner .blog-banner img,
 .blog-header.aboutbanner .blog-banner {
-	height:220px;
-		min-height:220px;
+
 	}
 .blog-header.aboutbanner .blog-banner .container ul li{
 	padding:0 5px ;
 	}
+	
+.blog-details	.order-lg-1.border-left{
+	border-left:none !important;
+	}
+	
 .aboutbanner.branch-banner .btn-slide {
 	width: 100%;
 	display: block;
@@ -1606,6 +1637,17 @@ footer .footer-text {
 }
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+html, body {
+	font-size: 14px;
+}
+body {
+}
+:root {
+	font-size: 14px;
+}	
+	
+	
 .pb60 {
 	padding-bottom: 40px;
 }
@@ -1634,6 +1676,19 @@ header .navbar-light.affix .navbar-brand img {
 	height: 300px;
 	min-height: 300px;
 }
+.blog-details	.order-lg-1.border-left{
+	border-left:none !important;
+	}
+.homeblog .card .card-img-top {
+    height: 150px;
+}
+.homeblog .card .btn-outline-primary {
+    min-width: 100%;
+	   margin-top: 5px;
+}
+homeblog .card h4 {
+    margin-bottom: 5px;
+}	
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -1642,4 +1697,12 @@ header .navbar-light.affix .navbar-brand img {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+	html, body {
+	font-size: 14px;
+}
+body {
+}
+:root {
+	font-size: 14px;
+}
 }
