@@ -38,11 +38,11 @@ $(window).scroll(function() {
 $(document).ready(function(){
     $('.sub-product').owlCarousel({
         margin:10,
-  loop: true,
+  loop: false,
   nav:true,
   dots: false,
-  autoplay: true,
-  autoplayHoverPause: true,
+  autoplay: false,
+  autoplayHoverPause: false,
   autoplayTimeout: 8000,
        
         responsive:{
@@ -64,9 +64,9 @@ $('.owl-blog').owlCarousel({
 	
   loop:true,
   
-  dots:true,
-  autoplay: true,
-  autoplayHoverPause: true,
+  dots:false,
+  autoplay: false,
+  autoplayHoverPause: false,
   autoplayTimeout: 2500,
       responsiveClass:true,
     responsive:{
@@ -87,10 +87,10 @@ $('.owl-blog').owlCarousel({
 
 $('.owl-three').owlCarousel({
     margin:30,
-	  loop: true,
-  dots: true,
-  autoplay: true,
-  autoplayHoverPause: true,
+	  loop: false,
+  dots: false,
+  autoplay: false,
+  autoplayHoverPause: false,
   autoplayTimeout: 2500,
     responsiveClass:true,
 	
@@ -119,10 +119,14 @@ $('.count').each(function() {
   $(this).prop('Counter', 0).animate({
     Counter: $(this).text()
   }, {
-    duration: 8000,
+    duration: 4000,
     easing: 'swing',
     step: function(now) {
       $(this).text(Math.ceil(now));
     }
   });
 });
+
+
+
+

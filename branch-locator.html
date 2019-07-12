@@ -21,24 +21,62 @@
 </head>
 <body>
  <header>
-  <nav class="navbar navbar-expand-md  navbar-light fixed-top">
-    <div class="container"> <a class="navbar-brand" href="#"><img src="images/Bajaj-Capital-logo.png" ></a>
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-      <div class="navbar-collapse collapse " id="navbarCollapse" style="">
-        <ul class="navbar-nav  ml-md-auto d-md-flex">
-          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Investment </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Investment 1</a> <a class="dropdown-item" href="#">Investment 2</a> <a class="dropdown-item" href="#">Investment 3</a> </div>
-          </li>
-          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Insurance </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Term Insurance</a> <a class="dropdown-item" href="#">Health Insurance</a> <a class="dropdown-item" href="#">Car Insurance</a> </div>
-          </li>
-          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Finance </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Finance 1</a> <a class="dropdown-item" href="#">Finance 2</a> <a class="dropdown-item" href="#">Finance 3</a> </div>
-          </li>
-          <li class="nav-item active"> <a class="nav-link" href="#"> About </a> </li>
-        </ul>
-        <button class="btn btn-primary my-2 my-sm-0" type="submit">Calculator</button>
-        <i class="fas fa-search"></i> </div>
+
+<nav class="navbar navbar-expand-md  navbar-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="images/Bajaj-Capital-logo.png" ></a>
+ 
+    
+            <button class="navbar-toggler  collapsed" type="button" data-toggle="collapse"  data-target="#navbar-collapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span> </span>
+            <span> </span>
+            <span> </span>
+        </button>
+    <div class="navbar-collapse collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav  ml-md-auto d-md-flex">
+  
+         <li class="nav-item">
+          <a class="nav-link" href="index.html" target="_blank"> Home </a>
+        </li>
+      
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Investments
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Mutual Fund </a>
+         <a class="dropdown-item" href="#"> Fixed Deposit</a> 
+         <a class="dropdown-item" href="#"> Portfolio Management System</a>
+        </div>
+      </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://bajajcapitalinsurance.com/" target="_blank"> Insurance </a>
+        </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Loans
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Personal Loan</a>
+
+         <a class="dropdown-item" href="#">Home Loan</a> 
+                
+        </div>
+      </li>
+       <li class="nav-item">
+          <a class="nav-link" href="http://pre-prod.onebajaj.capital/credit-card" target="_blank"> Credit Cards </a>
+        </li>
+    <li class="nav-item ">
+          <a class="nav-link" href="about.html"> About </a>
+        </li>
+      </ul>
+      
+
+
+      
+    </div>
     </div>
   </nav>
 </header>
@@ -54,14 +92,23 @@
           <h1> Brach Locator</h1>
           Over 110 locations all over India </div>
         <div class="col-lg-8 offset-lg-2  text-center">
-
+  <div class="  d-none d-sm-block mt-2">
           <div class="btn-group btn-slide" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-secondary active">Investment Centers</button>
             <button type="button" class="btn btn-secondary">Wealth Management Centers </button>
             <button type="button" class="btn btn-secondary">Advisor Network Group</button>
           </div>
-          
+          </div>
           <div class="row branchselect">
+          <div class=" col-md d-block d-sm-none mt-2">
+             <div class="form-group">
+    <select class="form-control" id="exampleFormControlSelecta1">
+      <option>Investment Centers</option>
+      <option>Wealth Management Centers</option>
+      <option>Advisor Network Group</option>
+    </select>
+  </div>
+            </div>
             <div class="col-md">
              <div class="form-group">
     <select class="form-control" id="exampleFormControlSelect1">
@@ -75,7 +122,7 @@
             </div>
             <div class="col-md">
              <div class="form-group">
-    <select class="form-control" id="exampleFormControlSelect1">
+    <select class="form-control dropdown-arrow" id="exampleFormControlSelect1">
       <option>Select Branch</option>
       <option>2</option>
       <option>3</option>
@@ -95,17 +142,13 @@
   <!-- Bajaj Capital Brach Locator -->
   
   
-  <div class="icon-bar d-lg-block d-md-none d-none">
-  <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a> 
-  <a href="#" class="twitter"><i class="fab fa-twitter"></i></a> 
-  <a href="#" class="google"><i class="fab fa-google"></i></a> 
-  <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-  <a href="#" class="youtube"><i class="fab fa-youtube"></i></a> 
-</div>
+  
   <section class="homeblog branch-main pb80">
     <div class="container">
         <div class="row">
-        <div class="col-lg-12 sec-heading text-center d-none d-sm-block">
+        
+ 
+        <div class="col-12 col-lg-8 offset-lg-2 sec-heading text-center align-self-center sec-heading text-center d-none d-sm-block">
     
     <h2> Investment Centers</h2>
   Advisor Network Group a division of Bajaj Capital Ltd is a unique platform for financial advisors where they can come together to achieve power of togetherness, grow with experience & transform individuals into a strong united force.
